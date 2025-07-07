@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "vulnerable-poetry-app"
+version = "0.1.0"
+description = ""
+authors = ["Demo <demo@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+# USED & vulnerable
+urllib3 = "1.24.2"        # CVE-2019-11324
+
+# *NOT* used
+MarkupSafe = "1.0"        # CVE-2021-46326
